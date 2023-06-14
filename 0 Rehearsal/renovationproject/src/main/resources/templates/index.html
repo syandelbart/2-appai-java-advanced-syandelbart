@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Paint</title>
+</head>
+<body>
+    <form action="/paint">
+        <p>
+            <label for="name">Name</label>
+            <input name="name" type="text" />
+        </p>
+
+        <p>
+            <label for="length">L (in metres)</label>
+            <input name="length" type="text" />
+        </p>
+
+        <p>
+            <label for="width">W (in metres)</label>
+            <input name="width" type="text"/>
+        </p>
+
+        <p>
+            <label for="height">H (in metres)</label>
+            <input name="height" type="text"/>
+        </p>
+
+        <p>
+            <label for="paintCeiling">Would you also like to paint the ceiling?</label>
+            <input name="paintCeiling" type="checkbox"/>
+        </p>
+
+        <div>
+        <label for="layerAmount">How many layers of paint do you want to put on?</label>
+
+
+
+                <input type="radio" name="layerAmount" value="1"/>
+                1
+
+                <input type="radio" name="layerAmount" value="2"/>
+                2
+
+                <input type="radio" name="layerAmount" value="3"/>
+                3
+
+        </div>
+
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
