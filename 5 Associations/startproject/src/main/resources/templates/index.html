@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<ol>
+    <li th:each="team : ${teams}"><span th:text="${team.getAssignment()}"/>
+        <ol>
+            <li th:each="member : ${team.getMembers()}">
+                <span th:text="${member.getName()}"/>
+                <span th:text="'(passportnbr: '+${member.getPassport().getPassportnbr()+')'}"></span>
+                <ul>
+                    <li th:each="tel : ${member.getPhonenbrs()}">
+                        <span th:text="${tel.getType()} + ': ' + ${tel.getNumber()}"/>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+< br/>
+<p><a href="/addTeam">Add team</a></p>
+<p><a href="/addPerson">Add a person to a team</a></p>
+<p><a href="/addPhone">Add phone number</a></p>
+</body>
+</html>

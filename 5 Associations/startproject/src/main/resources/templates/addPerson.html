@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Person</title>
+</head>
+<body>
+  <h1>Make Person</h1>
+  <form action="/submitPerson" >
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+    </p>
+    <p>
+      <label for="passport">Passport number:</label>
+      <input type="text" name="passportNumber" id="passportNumber">
+    </p>
+    <p>
+      <select name="teamId">
+        <option value = "-1">Choose a team </option>
+        <option th:each= "team: ${teams}" th:text="${team.toString()}" th:value="${team.getId()}" ></option>
+      </select>
+    </p>
+    <p>
+      <input type="submit" value="create team member" name="create team member">.
+    </p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Breads</title>
+</head>
+<body>
+  <p>
+    <form action="/search">
+      <label for="breadName">Search for a bread:</label>
+      <input type="text" name="breadName"/>
+      <button type="submit" value="search" name="search">Search</button>
+      <button type="submit" value="cheapest" name="cheapest">Cheapest</button>
+  </form>
+  </p>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Options</th>
+    </tr>
+    <tr th:each = "bread : ${breads}">
+      <td th:text="${bread.getName()}"></td>
+      <td th:text="${bread.getPrice()}"></td>
+      <td>
+        <a th:href="@{/delete(breadId=${bread.getId()})}">Delete</a> |
+        <a th:href="@{/edit(breadId=${bread.getId()})}">Edit</a>
+      </td>
+    </tr>
+  </table>
+  <p th:text="'Total amount of breads: ' + ${breads.size()}"></p>
+  <a href="/add">Add a new bread.</a>
+</body>
+</html>

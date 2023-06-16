@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+  <p><a href="/addPerson">Add a person </a></p>
+  <p><a href="/addCustomer">Add a customer</a></p>
+  <p><a href="/addEmployee">Add an employee</a></p>
+  <p><a href="/addExecutive">Add an executive</a></p>
+
+  <ol>
+      <li th:each="person : ${personlist}"><span th:text="${person.getName()}"/>
+          <span th:if="${person.getClassName() == 'Customer'}" th:text="'gets ' + ${person.getDiscount()} + ' Discount'" />
+          <span th:if="${person.getClassName() == 'Executive'}" th:text="'has a bonus of ' + ${person.getBonus()}" />
+          <span th:if="${person.getClassName() == 'Employee'}" th:text="'earns ' + ${person.getSalary()}" />
+      </li>
+  </ol>
+</body>
+</html>

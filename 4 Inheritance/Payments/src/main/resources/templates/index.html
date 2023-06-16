@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><a href="/result">Results</a></p>
+<p><a href="/resultasc">Results ascending</a></p>
+<p><a href="/resultcash">Results cash payments</a></p>
+<p><a href="/resultelec">Results electronic payments sorted by currency</a></p>
+<form action="/resultamount" method="post">
+    <p>
+        <label for="amount">Amount: </label>
+        <input type="text" name="amount" id="amount">
+        <input type="submit" value="List of all payments above a certain amount" name="amount">
+    </p>
+</form>
+</body>
+</html>

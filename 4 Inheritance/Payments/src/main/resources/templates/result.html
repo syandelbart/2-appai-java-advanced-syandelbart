@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol th:each="payment : ${paymentList}">
+    <li th:text="${payment.getBeneficiary() + ' ' + payment.getAmount() + payment.getCurrency()}"></li>
+</ol>
+<a href="/">Home</a>
+</body>
+</html>

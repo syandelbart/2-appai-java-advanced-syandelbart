@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Phone</title>
+</head>
+<body>
+  <h1>Create a Phone Number for a Person</h1>.
+  <form action="/submitPhone" method="post">
+    <p>
+      <select name="personId">
+        <option th:each= "person: ${persons}" th:text="${person.toString()}" th:value="${person.getId()}" ></option>
+      </select>.
+    </p>
+    <p>
+      <label for="type">Type:</label>.
+      <input type="text" name="type" id="type">
+    </p>
+    <p>
+      <label for="number">Number:</label>
+      <input type="text" name="number" id="number">
+    </p>
+    <p>
+      <input type="submit" value="create phone number" name="create phone number">.
+    </p>
+  </form>
+</body>
+</html>
