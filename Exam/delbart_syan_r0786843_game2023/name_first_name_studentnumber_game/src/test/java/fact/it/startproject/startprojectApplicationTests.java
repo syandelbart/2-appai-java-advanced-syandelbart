@@ -17,12 +17,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @SpringBootTest
 class startprojectApplicationTests {
 //
-//    @Test
-//    public void a_testSingleton() {
-//        CharacterSelectionMenu csMenu = CharacterSelectionMenu.getInstance();
-//        CharacterSelectionMenu csMenu2 = CharacterSelectionMenu.getInstance();
-//        assertTrue(csMenu == csMenu2);
-//    }
+    @Test
+    public void a_testSingleton() {
+        CharacterSelectionMenu csMenu = CharacterSelectionMenu.getInstance();
+        CharacterSelectionMenu csMenu2 = CharacterSelectionMenu.getInstance();
+        assertTrue(csMenu == csMenu2);
+    }
 //
 //
 }
