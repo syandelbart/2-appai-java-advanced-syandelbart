@@ -8,6 +8,8 @@ public class PrivateCompany extends Company {
     private String ownerName;
 
 
+
+
     public String getOwnerName() {
         return ownerName;
     }

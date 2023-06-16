@@ -1,14 +1,17 @@
 package fact.it.startproject.model;
 
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
 public class Department {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+
 
     private String name;
     private String code;
@@ -16,8 +19,31 @@ public class Department {
     @ManyToOne(cascade = CascadeType.ALL)
     private Company company;
 
-    @OneToMany(mappedBy = "employees")
-    private List<Department> employees;
+    @OneToMany
+    private List<Employee> employees;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+
+
 
     public String getName() {
         return name;
