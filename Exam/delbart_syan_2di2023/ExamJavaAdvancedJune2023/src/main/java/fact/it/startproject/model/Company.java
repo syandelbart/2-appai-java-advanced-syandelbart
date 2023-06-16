@@ -14,11 +14,18 @@ public class Company {
     private String location;
 
 
-    @OneToMany
+    @OneToMany(mappedBy = "company")
     private List<Department> departmentList;
+
+    public Company() {
+    }
 
     public Long getId() {
         return id;
+    }
+
+    public String getCompanyClass() {
+        return this.getClass().getSimpleName();
     }
 
     public void setId(Long id) {

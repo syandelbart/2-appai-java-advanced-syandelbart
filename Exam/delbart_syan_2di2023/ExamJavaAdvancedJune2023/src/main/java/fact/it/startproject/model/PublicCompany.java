@@ -6,6 +6,10 @@ import javax.persistence.Entity;
 public class PublicCompany extends Company{
     private boolean federal;
 
+    public PublicCompany() {
+
+    }
+
 
     public boolean isFederal() {
         return federal;

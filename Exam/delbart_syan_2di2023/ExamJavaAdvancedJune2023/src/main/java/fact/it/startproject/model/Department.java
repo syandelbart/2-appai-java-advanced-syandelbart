@@ -16,8 +16,12 @@ public class Department {
     private String name;
     private String code;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Company company;
+
+    public Department() {
+
+    }
 
     @OneToMany
     private List<Employee> employees;
