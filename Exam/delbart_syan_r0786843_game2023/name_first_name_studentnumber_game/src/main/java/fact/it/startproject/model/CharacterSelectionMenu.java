@@ -1,0 +1,18 @@
+package fact.it.startproject.model;
+
+// CharacterSelectionMenu class (Singleton)
+public class CharacterSelectionMenu {
+
+
+    public Character createCharacter(String characterType, String name) {
+        if (characterType.equalsIgnoreCase("warrior")) {
+            return new Warrior(name);
+        } else if (characterType.equalsIgnoreCase("mage")) {
+            return new Mage(name);
+        } else if (characterType.equalsIgnoreCase("archer")) {
+            return new Archer(name);
+        } else {
+            throw new IllegalArgumentException("Invalid character type.");
+        }
+    }
+}
