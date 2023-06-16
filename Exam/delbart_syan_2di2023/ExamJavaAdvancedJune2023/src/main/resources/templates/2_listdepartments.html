@@ -11,13 +11,10 @@
   <li>
     <span th:text="${department.getName()} + ' with ' + ${department.getEmployees().size()} + ' employee(s) of company ' + ${department.getCompany().getName()}"></span>
 
-    <!--          <span>This is a </span>-->
-    <!--          <span th:if="${company.getCompanyClass() == 'PublicCompany'}" th:text="${company.getFederal() ? 'federal' : 'Flemish'}'public company.'"></span>-->
-    <!--          <span th:if="${company.getCompanyClass() == 'PrivateCompany'}" th:text="'private company with owner' + ${company.getOwnerName()}"></span>-->
-
     <a th:href="@{/3_editdepartment.html(departmentId=${department.getId()})}">(edit)</a>
 
   </li>
 </ul>
+<a href="/">home</a>
 </body>
 </html>

@@ -75,6 +75,8 @@ public class MainController {
 
         this.departmentRepository.save(department);
 
+        model.addAttribute("departments",this.departmentRepository.findAll());
+
         return "2_listdepartments";
 
 
