@@ -1,6 +1,9 @@
 package fact.it.startproject.model;
 
-public class PublicCompany{
+import javax.persistence.Entity;
+
+@Entity
+public class PublicCompany extends Company{
     private boolean federal;
 
 

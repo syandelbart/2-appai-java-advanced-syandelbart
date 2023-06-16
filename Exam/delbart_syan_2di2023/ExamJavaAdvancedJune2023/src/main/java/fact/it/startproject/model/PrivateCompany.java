@@ -1,7 +1,10 @@
 package fact.it.startproject.model;
 
 
-public class PrivateCompany {
+import javax.persistence.Entity;
+
+@Entity
+public class PrivateCompany extends Company {
     private String ownerName;
 
 

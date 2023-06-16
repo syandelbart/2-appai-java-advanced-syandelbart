@@ -1,11 +1,19 @@
 package fact.it.startproject.model;
 
+import javax.persistence.*;
+import java.util.List;
 
-
+@Entity
 public class Company {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
     private String name;
     private String location;
+
+    @OneToMany(mappedBy = "departments")
+    private List<Department> departmentList;
 
 
 
