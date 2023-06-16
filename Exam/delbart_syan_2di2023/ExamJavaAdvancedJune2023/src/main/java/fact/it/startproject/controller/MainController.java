@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -38,6 +39,44 @@ public class MainController {
         model.addAttribute("departments",departments);
 
         return "2_listdepartments";
+
+    }
+
+    @RequestMapping("3_editdepartment.html")
+    public String editDepartment(Model model, HttpServletRequest request) {
+        Long departmentId = Long.parseLong(request.getParameter("departmentId"));
+
+        Department department = this.departmentRepository.getById(departmentId);
+
+        List<Company> companies = this.companyRepository.findAll();
+
+        model.addAttribute("department",department);
+        model.addAttribute("companies",companies);
+
+        return "3_editdepartment";
+
+
+    }
+
+    @RequestMapping("submitEditDepartment")
+    public String submitEditDepartment(Model model,HttpServletRequest request) {
+        Long departmentId = Long.parseLong(request.getParameter("departmentId"));
+        String name = request.getParameter("name");
+        String code = request.getParameter("code");
+        Long companyId = Long.parseLong(request.getParameter("companyId"));
+
+        Department department = this.departmentRepository.getById(departmentId);
+
+        Company company = this.companyRepository.getById(companyId);
+
+        department.setCompany(company);
+        department.setName(name);
+        department.setCode(code);
+
+        this.departmentRepository.save(department);
+
+        return "2_listdepartment";
+
 
     }
 }

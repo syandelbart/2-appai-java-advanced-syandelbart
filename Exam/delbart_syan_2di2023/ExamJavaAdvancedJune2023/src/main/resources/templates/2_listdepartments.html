@@ -9,13 +9,13 @@
 <ul th:each="department : ${departments}">
 
   <li>
-    <span th:text="${department.getName()} + ' located in ' + ${company.getLocation()} + ' with ' + ${company.getDepartmentList().size()} + ' department(s).'"></span>
+    <span th:text="${department.getName()} + ' with ' + ${department.getEmployees()} + ' employee(s) of company' + ${department.getCompany().getName()}"></span>
 
     <!--          <span>This is a </span>-->
     <!--          <span th:if="${company.getCompanyClass() == 'PublicCompany'}" th:text="${company.getFederal() ? 'federal' : 'Flemish'}'public company.'"></span>-->
     <!--          <span th:if="${company.getCompanyClass() == 'PrivateCompany'}" th:text="'private company with owner' + ${company.getOwnerName()}"></span>-->
 
-    <a th:href="@{/edit(companyId=${company.getId()})}">(edit)</a>
+    <a th:href="@{/3_editdepartment(departmentId=${department.getId()})}">(edit)</a>
 
   </li>
 </ul>

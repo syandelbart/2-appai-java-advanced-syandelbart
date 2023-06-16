@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit department</title>
+</head>
+<body>
+    <h1>Edit department</h1>
+    <form action="/submitEditDepartment">
+        <input hidden name="departmentId" th:value="${department.getId()}"/>
+
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" th:value="${department.getName()}"/>
+        </p>
+        <p>
+            <label for="code">Code</label>
+            <input type="text" name="code" id="code" th:value="${department.getCode()}"/>
+        </p>
+        <p>
+            <label for="companyId">Company</label>
+            <select th:each="company : ${companies}" name="companyId" id="companyId">
+                <option value="${company.getId()}" th:text="${company.getName()}"></option>
+            </select>
+        </p>
+
+        <button type="submit">
+            Edit
+        </button>
+    </form>
+</body>
+</html>

@@ -34,6 +34,9 @@ public class Department {
         this.id = id;
     }
 
+    public List<Employee> getEmployees() {
+        return this.employees;
+    }
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
