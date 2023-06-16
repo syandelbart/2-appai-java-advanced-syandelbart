@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Edit department</h1>
-    <form action="/submitEditDepartment">
+    <form action="/submitEditDepartment.html">
         <input hidden name="departmentId" th:value="${department.getId()}"/>
 
         <p>
@@ -19,8 +19,8 @@
         </p>
         <p>
             <label for="companyId">Company</label>
-            <select th:each="company : ${companies}" name="companyId" id="companyId">
-                <option value="${company.getId()}" th:text="${company.getName()}"></option>
+            <select  name="companyId" id="companyId">
+                <option th:each="company : ${companies}" th:value="${company.getId()}" th:text="${company.getName()}"></option>
             </select>
         </p>
 

@@ -5,17 +5,17 @@
   <title>List Companies</title>
 </head>
 <body>
-<h1>List of companies</h1>
+<h1>List of departments</h1>
 <ul th:each="department : ${departments}">
 
   <li>
-    <span th:text="${department.getName()} + ' with ' + ${department.getEmployees()} + ' employee(s) of company' + ${department.getCompany().getName()}"></span>
+    <span th:text="${department.getName()} + ' with ' + ${department.getEmployees().size()} + ' employee(s) of company ' + ${department.getCompany().getName()}"></span>
 
     <!--          <span>This is a </span>-->
     <!--          <span th:if="${company.getCompanyClass() == 'PublicCompany'}" th:text="${company.getFederal() ? 'federal' : 'Flemish'}'public company.'"></span>-->
     <!--          <span th:if="${company.getCompanyClass() == 'PrivateCompany'}" th:text="'private company with owner' + ${company.getOwnerName()}"></span>-->
 
-    <a th:href="@{/3_editdepartment(departmentId=${department.getId()})}">(edit)</a>
+    <a th:href="@{/3_editdepartment.html(departmentId=${department.getId()})}">(edit)</a>
 
   </li>
 </ul>

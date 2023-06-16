@@ -15,7 +15,7 @@
 <!--          <span th:if="${company.getCompanyClass() == 'PublicCompany'}" th:text="${company.getFederal() ? 'federal' : 'Flemish'}'public company.'"></span>-->
 <!--          <span th:if="${company.getCompanyClass() == 'PrivateCompany'}" th:text="'private company with owner' + ${company.getOwnerName()}"></span>-->
 
-          <a th:href="@{/edit(companyId=${company.getId()})}">(edit)</a>
+          <a th:href="@{/editcompany.html(companyId=${company.getId()})}">(edit)</a>
 
       </li>
   </ul>

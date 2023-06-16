@@ -58,7 +58,7 @@ public class MainController {
 
     }
 
-    @RequestMapping("submitEditDepartment")
+    @RequestMapping("submitEditDepartment.html")
     public String submitEditDepartment(Model model,HttpServletRequest request) {
         Long departmentId = Long.parseLong(request.getParameter("departmentId"));
         String name = request.getParameter("name");
@@ -75,7 +75,7 @@ public class MainController {
 
         this.departmentRepository.save(department);
 
-        return "2_listdepartment";
+        return "2_listdepartments";
 
 
     }
