@@ -1,6 +1,9 @@
 package fact.it.startproject.model;
 
 // FireballAttack class
-public class FireballAttack {
+public class FireballAttack implements AttackStrategy {
+    public String attack() {
+        return "a fireball";
+    }
 
 }

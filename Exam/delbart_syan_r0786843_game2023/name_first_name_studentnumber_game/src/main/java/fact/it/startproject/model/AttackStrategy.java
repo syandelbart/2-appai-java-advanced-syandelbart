@@ -4,3 +4,4 @@ package fact.it.startproject.model;
 public interface AttackStrategy {
     public String attack();
 }
+
