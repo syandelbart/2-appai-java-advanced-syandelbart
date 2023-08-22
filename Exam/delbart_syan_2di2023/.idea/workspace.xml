@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50540561-fda3-4294-a22e-822e253951e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/delbart_syan_2di2023.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/controller/EmployeeRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/model/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/model/PrivateCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/model/PublicCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/repository/CompanyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/repository/DepartmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/java/fact/it/startproject/startprojectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/resources/templates/1_listcompanies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/resources/templates/2_listdepartments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/resources/templates/3_editdepartment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExamJavaAdvancedJune2023/src/test/java/fact/it/startproject/startprojectApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RHi0Xn7M8hB5pSeUT4epSi67iX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/tsunami/git/2-appai-java-advanced-syandelbart/Exam/delbart_syan_r0786843_game2023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "e6e95c56d9d7dc9fb09e9d3f8ab1e23d",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="startprojectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="startproject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fact.it.startproject.startprojectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50540561-fda3-4294-a22e-822e253951e3" name="Changes" comment="" />
+      <created>1686913185157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686913185157</updated>
+      <workItem from="1686913186151" duration="7579000" />
+      <workItem from="1686920812206" duration="496000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
